@@ -208,13 +208,9 @@ public class ClienteRestController {
 			}
 
 			String nombreFotoAnterior = cliente.getFoto();
-
 			uploadService.eliminar(nombreFotoAnterior);
-
 			cliente.setFoto(nombreArchivo);
-
 			clienteService.save(cliente);
-
 			response.put("cliente", cliente);
 			response.put("mensaje", "Has subido correctamente la imagen: " + nombreArchivo);
 

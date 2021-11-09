@@ -14,7 +14,7 @@
     </div>
     <table class="table table-bordered table-striped" *ngIf="clientes?.length>0">
       <thead>
-        <tr>
+        <tr style="text-align: center;">
           <th *ngIf="authService.hasRole('ROLE_USER')">#</th>
           <th>nombre</th>
           <th>apellido</th>
